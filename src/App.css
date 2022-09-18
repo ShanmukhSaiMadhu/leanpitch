@@ -5,7 +5,6 @@
 
 body {
   margin: 0;
-  background-color: black;
 }
 
 /* .App {
@@ -17,7 +16,6 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   background-color: rgb(27, 24, 24);
   color: white;
@@ -82,10 +80,10 @@ body {
 
 /*------------------------community-container------------------------*/
 
-.community-container, .register-container {
+.community-container {
   background-color: black;
-  margin: auto;
   height: 100%;
+  padding-bottom: 2rem;
 }
 
 .community-container > h1 {
@@ -113,7 +111,7 @@ body {
   grid-column-gap: 2rem;
   grid-row-gap: 0px;
   color: white;
-  margin: 4rem;
+  margin: 0 4rem;
 }
 
 .community-text, .register-text {
@@ -157,6 +155,14 @@ body {
   text-decoration: none;
 }
 
+/*------------------------register-container------------------------*/
+
+.register-container {
+  background-color: black;
+  margin-top: -1.2rem;
+  padding: 0;
+  height: 100%;
+}
 
 .register-text h1 {
   font-size: 5rem;
@@ -177,7 +183,7 @@ body {
   background-color: red;
   border-radius: 2rem;
   text-align: center;
-  margin: 1rem;
+  margin: 2rem;
   padding: 0.3rem 0.8rem;
 }
 
@@ -190,4 +196,245 @@ body {
 
 .register-grid img {
   width: 100%;
+  min-height: 80%;
+}
+
+/*------------------------training-container------------------------*/
+
+.training-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 3rem;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: 'Poppins', serif;
+}
+
+.training-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.card-1 .card {
+  background-color: #3F677A;
+}
+
+.card-1 .card .card-main-text {
+  background-color: #29424C;
+}
+/* ----------- */
+.card-2 .card {
+  background-color: #576E9A;
+}
+
+.card-2 .card .card-main-text {
+  background-color: #435679;
+}
+
+/* ----------- */
+
+.card-3 .card {
+  background-color: #3E6B87;
+}
+
+.card-3 .card .card-main-text {
+  background-color: #315267;
+}
+
+/* ----------- */
+
+.card-4 .card {
+  background-color: #3182A0;
+}
+
+.card-4 .card .card-main-text {
+  background-color: #21596D;
+}
+
+/* ----------- */
+
+.card-5 .card {
+  background-color: #3F677A;
+}
+
+.card-5 .card .card-main-text {
+  background-color: #29424C;
+}
+
+/* ----------- */
+
+.training-container {
+  display: grid;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.training-container .card {
+  margin: 1rem 0;
+  border-radius: 1rem;
+  color: white;
+  padding: 0;
+}
+
+.card-img {
+  width: 7rem;
+  margin: 0.5rem;
+}
+.card-body {
+  margin: 0;
+  padding: 1rem 0;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 3.5rem;
+}
+
+.card-title:hover {
+  overflow: visible;
+}
+
+.card-main-text {
+  margin-top: 1rem;
+  
+  margin: 0;
+  padding: 0.3rem 1rem;
+  width: 100%;
+}
+
+.card-main-text h4 {
+  font-weight: 600;
+}
+
+.card-main-text small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card-btn {
+  background-color: white;
+  color: black;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/*------------------------meetups-container------------------------*/
+
+.meetups-container, .webinars-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.meetups-container h1, .webinars-container h1 {
+  font-family: 'Poppins', serif;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.meetups-container .btn-groups {
+  margin-top: 2rem;
+}
+
+.meetups-container .btn-group, .webinars-container .btn-group {
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.btn-group-lg>.btn {
+  border-radius: 0px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.btn-filter {
+  margin-left: 1rem;
+  background-color: white;
+}
+
+.meetups-container h2 {
+  font-family: 'Poppins', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 4rem 0;
+}
+
+/*------------------------webinars-container------------------------*/
+
+.webinars-container .btn-group {
+  margin: 2rem 0;
+  width: 30rem;
+}
+
+
+
+.webinars-container .card {
+  background: linear-gradient(rgba(27, 27, 27, 0.557), rgba(32, 31, 31, 0.511)), url("https://images.unsplash.com/photo-1605712916066-e143c317df72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHB1enpsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  height: 12rem;
+  text-align: left;
+  margin: 3rem;
+}
+
+.webinars-container .card-text {
+  color: yellow;
+  margin-top: 1.7rem;
+  padding: 3.7rem 1rem 0 1rem;
+  font-weight: 600;
+} 
+
+.webinars-container .card-text p {
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1500px) {
+  .training-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .training-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    margin: 2rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .training-cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
