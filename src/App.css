@@ -337,7 +337,7 @@ body {
 
 /*------------------------meetups-container------------------------*/
 
-.meetups-container, .webinars-container {
+.meetups-container, .webinars-container, .conference-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +345,7 @@ body {
   margin: 2rem;
 }
 
-.meetups-container h1, .webinars-container h1 {
+.meetups-container h1, .webinars-container h1, .conference-container h1 {
   font-family: 'Poppins', serif;
   font-size: 5rem;
   font-weight: 600;
@@ -355,7 +355,7 @@ body {
   margin-top: 2rem;
 }
 
-.meetups-container .btn-group, .webinars-container .btn-group {
+.meetups-container .btn-group, .webinars-container .btn-group, .conference-container .btn-group {
   border: 1px solid black;
   border-radius: 0px;
 }
@@ -381,7 +381,7 @@ body {
 
 /*------------------------webinars-container------------------------*/
 
-.webinars-container .btn-group {
+.webinars-container .btn-group, .conference-container .btn-group {
   margin: 2rem 0;
   width: 30rem;
 }
@@ -405,6 +405,40 @@ body {
 .webinars-container .card-text p {
   color: white;
   font-weight: 500;
+}
+
+/*------------------------conference-container------------------------*/
+
+.conference-container {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+}
+
+.conference-past {
+  background-color: black;
+}
+
+.conference-container p {
+  font-family: 'Inter', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 5rem 4rem;
+}
+
+.conference-container .notify-btn {
+  width: 17rem;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Inter', serif;
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+  margin: 2rem;
+  padding: 0.3rem 0.8rem;
 }
 
 @media screen and (max-width: 1500px) {

@@ -11,6 +11,7 @@ import acspo from './images/A-CSPO.png'
 import cpmp from './images/CPMP.png'
 import Meetups from './components/Meetups';
 import Webinars from './components/Webinars';
+import Conference from './components/Conference';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       </div>
       <Meetups />
       <Webinars />
+      <Conference />
     </div>
   );
 }
