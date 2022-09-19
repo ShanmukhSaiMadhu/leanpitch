@@ -9,8 +9,8 @@ function Meetups() {
         <h1>Our Meetups</h1>
         <div className='btn-groups'>
           <ButtonGroup size="lg" className="mb-2">
-              <Button className='btn btn-dark active'>Upcomming</Button>
-              <Button className='btn btn-light'>Past</Button>
+              <Button className='btn btn-dark meetup-upcomming'>Upcomming</Button>
+              <Button className='btn btn-light meetup-past'>Past</Button>
           </ButtonGroup>
           <button className='btn-filter'><i class="fa-solid fa-filter"></i>Filter By City</button>
         </div>

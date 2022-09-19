@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 function Trainings(props) {
   return (
     <div className='training-container'>
-        <Card style={{ width: '22rem'}} >
+        <Card style={{ width: '20rem'}} >
             <Card.Img variant="top" src={props.img} className='card-img' />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>

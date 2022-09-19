@@ -12,6 +12,12 @@ import cpmp from './images/CPMP.png'
 import Meetups from './components/Meetups';
 import Webinars from './components/Webinars';
 import Conference from './components/Conference';
+import Videos from './components/Videos';
+import PMSpeak from './components/PMSpeak';
+import Blogs from './components/Blogs'
+import Podcasts from './components/Podcasts';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 function App() {
   return (
@@ -31,7 +37,44 @@ function App() {
       </div>
       <Meetups />
       <Webinars />
-      <Conference />
+      <div className='conference-main'>
+        <h1 style={{display: "flex", justifyContent:"center"}}>Our Conference</h1>
+          <div className='btn-groups conference-btn'>
+              <ButtonGroup size="lg" className="mb-2">
+                  <Button className='btn btn-light conference-upcomming'>Upcomming</Button>
+                  <Button className='btn btn-dark conference-past'>Past</Button>
+              </ButtonGroup>
+          </div>
+        <Conference />
+      </div>
+      
+      <h1 className='videos-title'>Videos</h1>
+      <div className='videos-container'>
+        <Videos link="https://www.youtube.com/embed/GZL8OW1jwPM" />
+        <Videos link="https://www.youtube.com/embed/Wg0X5OnZF7E" />
+      </div>
+      <h1 className='pmspeak-title'>PM Speak Series</h1>
+      <div className='speak-series'>
+        <PMSpeak />
+        <PMSpeak />
+        <PMSpeak />
+        <PMSpeak />
+      </div>
+      <h1 className='blogs-title'>Blogs</h1>
+      <div className='main-blogs'>
+        <Blogs />
+        <Blogs />
+        <Blogs />
+        <Blogs />
+      </div>
+      <h1 className='podcasts-title'>Podcasts</h1>
+      <div className='main-podcasts'>
+        <Podcasts />
+        <Podcasts />
+        <Podcasts />
+        <Podcasts />
+      </div>
+      <Button className='btn btn-danger msg-btn'>Send message</Button>
     </div>
   );
 }

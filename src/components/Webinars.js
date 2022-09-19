@@ -9,8 +9,8 @@ function Webinars() {
     <h1>Our Webinars</h1>
     <div className='btn-groups'>
       <ButtonGroup size="lg" className="mb-2">
-          <Button className='btn btn-dark active'>Upcomming</Button>
-          <Button className='btn btn-light'>Past</Button>
+          <Button className='btn btn-dark webinar-upcomming'>Upcomming</Button>
+          <Button className='btn btn-light webinar-past'>Past</Button>
       </ButtonGroup>
     </div>
     <Card style={{ width: '22rem' }}>
