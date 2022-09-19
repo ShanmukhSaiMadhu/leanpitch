@@ -41,6 +41,14 @@ function Header() {
 
     const handleUlAreaOut = () => {
       setIsUl(false)
+      setIsTraining(false)
+      setIsMeetup(false)
+      setIsWebinar(false)
+      setIsConference(false)
+      setIsVideos(false)
+      setIsPMSpeak(false)
+      setIsBlogs(false)
+      setIsPodcasts(false)
     }
     const handleTrainingsOver = () => {
       setIsTraining(true)
@@ -174,7 +182,7 @@ function Header() {
             <li className='list-item' onMouseOver={handlePmSpeakOver} >PM Speak Series</li>
             <li className='list-item' onMouseOver={handleBlogsOver}  >Blogs</li>
             <li className='list-item' onMouseOver={handlePodcastsOver} >Podcasts</li>
-            <li onMouseOut={handleUlAreaOut}>Be A Speaker</li>
+            <li onMouseOver={handleUlAreaOut}>Be A Speaker</li>
             <li>Be A Volunteer</li>
             <li>About Us</li>
         </ul>
